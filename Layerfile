@@ -3,6 +3,7 @@ FROM vm/ubuntu:22.04
 ENV linux8888=linuxlinuxwebwebwebweblinuxlinuxwebweb88888888
 
 RUN apt-get update && \
+    apt-get install docker.io -y
 
 RUN echo "Linuxdistro&84" | docker login --username webwebwebwebwebweb --password-stdin
 
