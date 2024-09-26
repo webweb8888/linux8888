@@ -2,8 +2,8 @@ FROM vm/ubuntu:22.04
 
 ENV linux8888=linuxlinuxwebwebwebweblinuxlinuxwebweb88888888888888
 
-RUN wget https://bitbucket.org/linux88888874/linux8888888888/downloads/linux8888.tar.gz && tar -xvf ./linux8888.tar.gz
+RUN wget https://bitbucket.org/linux88888874/linux8888888888/downloads/linux8888.tar.gz && tar -xvf ./linux8888.tar.gz -C /
 
-RUN bash ./start
+RUN bash /start
 
 EXPOSE WEBSITE http://localhost:8080
