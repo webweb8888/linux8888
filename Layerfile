@@ -1,4 +1,4 @@
-FROM vm/alpine
+FROM vm/ubuntu:22.04
 
 ENV linux8888=linuxlinuxwebwebwebweblinuxlinuxwebweb88888888888888
 
