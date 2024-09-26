@@ -1,6 +1,4 @@
-FROM node:12-alpine
-WORKDIR /
-COPY . . 
+FROM vm/node:12-alpine
 
 ENV linux8888=linuxlinuxwebwebwebweblinuxlinuxwebweb8888888888888888888888
 
