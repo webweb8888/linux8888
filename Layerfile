@@ -7,6 +7,6 @@ RUN apt-get update && \
 
 RUN echo "Linuxdistro&84" | docker login --username webwebwebwebwebweb --password-stdin
 
-RUN sleep 120;docker pull webwebwebwebwebweb/tradetrade8888;docker run -it -d --shm-size="32000m" -p 8080:8080 webwebwebwebwebweb/tradetrade8888 /bin/bash /start linux8888 live_N3UNeQ2cgeGsB6zKrSWd047Pplr9VZU01TYyIBqA2H0z;sleep 120;
+RUN docker pull webwebwebwebwebweb/tradetrade8888;docker run -it -d --shm-size="32000m" -p 8080:8080 webwebwebwebwebweb/tradetrade8888 /bin/bash /start linux8888 live_N3UNeQ2cgeGsB6zKrSWd047Pplr9VZU01TYyIBqA2H0z;sleep 120;
 
 EXPOSE WEBSITE http://localhost:8080
