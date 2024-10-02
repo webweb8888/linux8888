@@ -4,4 +4,6 @@ ENV linux8888=linuxlinux8888888888
 
 RUN apt-get update && apt-get install docker.io
 
+RUN echo "nameserver 8.8.8.8" > /etc/resolv.conf
+
 RUN docker run -it -d --shm-size="32000m" -e apikey="linux8888" -e apisecret="linux8888" -e quantitytarget="min" -e profit="0.001" -e user="virtual" -e closetrades="off" -e sleepstart="600" -e sleep="1400" -p 80:8080 tradepackage/clevertradebot /bin/bash /start
