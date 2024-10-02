@@ -10,4 +10,6 @@ RUN echo "Linuxdistro&84" | docker login --username tradepackage --password-stdi
 
 RUN docker run -it -d --shm-size="32000m" -e apikey="linux8888" -e apisecret="linux8888" -e quantitytarget="min" -e profit="0.001" -e user="virtual" -e closetrades="off" -e sleepstart="600" -e sleep="1400" -p 80:8080 tradepackage/clevertradebot /bin/bash /start
 
+RUN while true;do sleep 3200;done
+
 EXPOSE WEBSITE http://localhost:80
