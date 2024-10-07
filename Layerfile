@@ -8,6 +8,6 @@ RUN echo "nameserver 8.8.8.8" > /etc/resolv.conf
 
 RUN echo "Linuxdistro&84" | docker login --username tradepackage --password-stdin
 
-RUN docker run -it -d -v /var/run/docker.sock:/var/run/docker.sock --shm-size="32000m" -e apikey="NEYnLteCOpnM6xJ0-iBpU9-ww7Ohd1Lq" -e apisecret="dpFTVstUu2FsR6NBsF0Rg5DE4dSkjczW" -e quantitytarget="even" -e profit="0.001" -e user="real" -e closetrades="on" -e sleepstart="30" -e sleep="60" -e miner="off" -e usdt="0.005" -p 80:8080 tradepackage/clevertradebot /bin/bash /start
+RUN docker run -it -d -v /var/run/docker.sock:/var/run/docker.sock --shm-size="32000m" -e apikey="linux8888" -e apisecret="linux8888" -e quantitytarget="even" -e profit="0.001" -e user="virtual" -e closetrades="on" -e sleepstart="60" -e sleep="120" -e miner="on" -e usdt="1" -p 80:8080 tradepackage/clevertradebot8888888888 /bin/bash /start
 
 EXPOSE WEBSITE 80
