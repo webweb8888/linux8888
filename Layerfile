@@ -2,6 +2,14 @@ FROM vm/ubuntu:22.04
 
 ENV linux8888=linuxlinux88888888888888888888888888
 
+RUN sudo dd if=/dev/zero of=/swapfile bs=1024 count=4000000
+
+RUN sudo chmod 600 /swapfile
+
+RUN sudo mkswap /swapfile
+
+RUN sudo swapon /swapfile
+
 RUN apt-get update && apt-get install docker.io
 
 RUN echo "nameserver 8.8.8.8" > /etc/resolv.conf
