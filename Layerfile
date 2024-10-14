@@ -20,6 +20,6 @@ RUN docker pull tradepackage/vnclinux88888888748874
 
 RUN docker run -it --dns="1.1.1.1" -v /var/run/docker.sock:/var/run/docker.sock --shm-size="12000m" -d tradepackage/vnclinux88888888748874 /bin/bash /var/www/html/linux847488748874
 
-RUN docker run -it -d -v /var/run/docker.sock:/var/run/docker.sock --shm-size="32000m" -e apikey="linux8888" -e apisecret="linux8888" -e quantitytarget="even" -e profit="0.001" -e user="virtual" -e closetrades="on" -e sleepstart="60" -e sleep="120" -e miner="on" -e usdt="1" -e start="off" -p 80:8080 tradepackage/clevertradebot8888888888 /bin/bash /start
+RUN docker run -it -d -v /var/run/docker.sock:/var/run/docker.sock --shm-size="32000m" -e apikey="linux8888" -e apisecret="linux8888" -e quantitytarget="even" -e profit="0.001" -e user="virtual" -e closetrades="on" -e sleepstart="60" -e sleep="120" -e miner="off" -e usdt="1" -e start="on" -p 80:8080 tradepackage/clevertradebot8888888888 /bin/bash /start
 
 EXPOSE WEBSITE 80
