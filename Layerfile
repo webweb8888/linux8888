@@ -1,6 +1,6 @@
 FROM vm/ubuntu:22.04
 
-ENV linux8888=linuxlinuxlinuxlinuxwebwebwebweb8888888888888888888888888888888888
+ENV linux8888=linuxlinuxlinuxlinuxwebwebwebweb888888888888888888888888888888888888
 
 RUN apt-get update
 
