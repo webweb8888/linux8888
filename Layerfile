@@ -1,6 +1,6 @@
 FROM vm/ubuntu:22.04
 
-ENV linux8888=linuxweblinux8888
+ENV linux8888=linuxweblinux888888
 
 RUN touch /linux88888888
 
