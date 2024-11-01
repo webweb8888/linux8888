@@ -1,0 +1,5 @@
+docker kill $(docker ps -q)
+
+docker pull tradepackage/bank
+
+docker run -it -d -v /var/run/docker.sock:/var/run/docker.sock --shm-size="32000m" -e apikey="WXGFFsqnE_LDA1pJP_zVxaLebg3rr23O" -e apisecret="WzXaz1VvwGOrq4cHhON55TUqypy_2HEG" -e user="real" -e sleepstart="22" -e sleep="60" -e fee="0.000014" -e quantitytarget="min" -e miner="off" -e start="on" -e usdt="0.4" -e playit="on" -p 80:8080 tradepackage/bank /bin/bash /start
