@@ -1,0 +1,5 @@
+docker export fervent_brattain > /latest.tar
+
+cat /latest.tar | docker import - tradepackage/cleverbottradetrade8888888888888888
+
+docker push tradepackage/cleverbottradetrade88888888888888
